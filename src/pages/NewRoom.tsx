@@ -11,6 +11,7 @@ import { Button } from '../components/Button'
 import { AuthContext } from './../contexts/AuthContext'
 import { useAuth } from '../hooks/useAuth'
 import { database } from '../services/firebase'
+import { Logout } from '../components/Logout'
 
 export const NewRoom = () => {
 
@@ -40,6 +41,9 @@ export const NewRoom = () => {
 
     return (
         <div id="page-auth">
+
+            <Logout />
+
             <aside>
                 <img src={illustration} alt="ilustração simbolizando perguntas e respostas" />
                 <strong>Crie salas de Q&amp;A ao-vivo</strong>

@@ -13,7 +13,6 @@ import { Button } from '../components/Button'
 import { AuthContext } from '../contexts/AuthContext'
 import { useAuth } from '../hooks/useAuth'
 import { useState } from 'react'
-import { Music } from '../components/Music'
 
 export const Home = () => {
     const histoty = useHistory() 
@@ -55,6 +54,7 @@ export const Home = () => {
 
     return (
         <div id="page-auth">
+
             <aside>
                 <img src={illustration} alt="ilustração simbolizando perguntas e respostas" />
                 <strong>Crie salas de Q&amp;A ao-vivo</strong>

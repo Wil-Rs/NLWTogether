@@ -12,6 +12,7 @@ import { database } from '../services/firebase'
 import { useEffect } from 'react'
 import { Question } from '../components/Question'
 import { useRoom } from '../hooks/useRoom'
+import { Logout } from '../components/Logout'
 
 
 
@@ -76,6 +77,9 @@ export const AdminRoom = () => {
 
     return (
         <div id="page-room">
+
+            <Logout />
+
             <header>
                 <div className="content">
                     <img src={logoImg} alt="" />

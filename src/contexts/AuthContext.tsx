@@ -1,4 +1,5 @@
 import { createContext, ReactNode, useEffect, useState } from "react"
+import { FunctionTypeNode } from "typescript"
 import { firebase, auth } from "../services/firebase"
 
 type User = {
@@ -10,6 +11,7 @@ type User = {
 type AuthContextType = {
   user: User | undefined;
   signinWithGoogle: () => Promise<void>
+  
 }
 
 export const AuthContext = createContext({} as AuthContextType)

@@ -1,0 +1,16 @@
+#logout-power {
+    position: fixed;
+    bottom: 0;
+    right: 12px;
+
+    button {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        
+        img {
+            width: 30px;
+        }
+
+    }
+}
